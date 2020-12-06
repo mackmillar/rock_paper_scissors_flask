@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Let's Play Rock Paper Scissors!</h1>
+
+    <h3>Choose player 1</h3>
+
+
+    <form class="form-inline" action="/play-game" method="post">
+        <label for="name1">Name</label>
+        <input type="text" name="name1" id="name1">
+        <label for="choice1">Rock</label>
+        <input type="radio" name= "choice1" id= "choice1" value="Rock">
+        <label for="choice1">Paper</label>
+        <input type="radio" name= "choice1" id= "choice1" value="Paper">
+        <label for="choice1">Scissors</label>
+        <input type="radio" name= "choice1" id= "choice1" value="Scissors">
+        
+
+        <h3>Choose player 2</h3>
+
+        <label for="name2">Name</label>
+        <input type="text" name="name2" id="name2">
+        <label for="choice2">Rock</label>
+        <input type="radio" name= "choice2" id= "choice2" value="Rock">
+        <label for="choice2">Paper</label>
+        <input type="radio" name= "choice2" id= "choice2" value="Paper">
+        <label for="choice2">Scissors</label>
+        <input type="radio" name= "choice2" id= "choice2" value="Scissors">
+        
+        <input type="submit" value="Let's Play">
+
+      </form> 
+
+
+{% endblock %}
